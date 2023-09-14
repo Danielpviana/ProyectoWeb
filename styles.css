@@ -1,0 +1,46 @@
+.navbar{
+    position: sticky !important;
+    top: 0px;
+    z-index: 2;
+}
+
+li .nav-link{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+
+.active{
+    color: white !important;
+}
+
+.navbar-logo{
+    width: 50px;
+    height: auto;
+}
+.navbar-cart{
+    width:27px;
+    height: auto;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+/*.carousel{
+    height: calc(100vh - 70px);
+}*/
+  
+
+
+.container{
+    border: solid black;
+}
+
+.row{
+    border: solid black;
+}
+
+.col-3{
+    border: solid black;
+}

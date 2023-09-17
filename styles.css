@@ -16,6 +16,8 @@
     text-shadow: 1px 1px 1px black;
 }
 
+
+
 .nav-link{
     color: white;
     font-weight: bold;
@@ -35,6 +37,7 @@
 
 .icons{
     margin-right: 30px;
+    position: right;
 }
 
 .icons img{
@@ -62,19 +65,19 @@ li .nav-link{
     z-index: 0;
 }
 
-.bg-image .banner-photo{
+#bg-image .banner-photo{
     flex: 1 1 400px;
 }
 
-.bg-image .banner-photo img{
+#bg-image .banner-photo img{
     width: 100%;
 }
 
-.bg-image .top-left{
+#bg-image .top-left{
     flex:1 1 400px;
 }
 
-.bg-image {
+#bg-image {
     position: relative;
     text-align: left;
     color: black;
@@ -83,7 +86,7 @@ li .nav-link{
 }
 
 .banner-photo{
-    height: 92.2vh;
+    height: 80%;
     width: 100%;
 }
 
@@ -91,6 +94,8 @@ li .nav-link{
     position: absolute;
     top: 50px;
     left: 16px;
+    width: 100%;
+    height: 50%;
 }
 
 .top-left h3{
@@ -143,32 +148,19 @@ li .nav-link{
     text-shadow: 1px 1px 1px black;
 }
 
-@media screen and (max-width:800px){
+.top-left .btn:hover{
+    background-color: #65d4e2;
+    color: white;   
+}
+
+@media screen and (max-width:1100px){
     .top-left h3{
         margin-left: 50px;
         font-size: 40px;
     }
-    .top-left p{
+    .top-left h2{
         margin-left: 50px;
-    }
-    .top-left .btn{
-        margin-left: 50px;
-    }
-}
-@media screen and (max-width:570px){
-    .top-left h3{
-        margin-left: 20px;
-    }
-    .top-left p{
-        margin-left: 20px;
-    }
-    .top-left .btn{
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width:550px){
-    .top-left h3{
-        margin-left: 50px;
+        font-size: 30px;
     }
     .top-left p{
         margin-left: 50px;
@@ -177,17 +169,46 @@ li .nav-link{
         margin-left: 50px;
     }
 }
-@media screen and (max-width:290px){
+@media screen and (max-width:900px){
     .top-left h3{
+        margin-left: 30px;
         font-size: 30px;
     }
     .top-left h2{
-        font-size: 30px;
+        margin-left: 30px;
+        font-size: 20px;
     }
-    .changecontent{
-        font-size: 30px;
+    .top-left h5{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .top-left p{
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .top-left .btn{
+        margin-left: 30px;
+        size-adjust: 50%;
     }
 }
+@media screen and (max-width:760px){
+    .top-left h3{
+        margin-left: 20px;
+    }
+    .top-left h2{
+        margin-left: 20px;
+    }
+    .top-left h5{
+        visibility: hidden;
+    }
+    p{
+        visibility: hidden;
+    }
+    .top-left .btn{
+        visibility: hidden;
+    }
+}
+
   
 
 

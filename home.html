@@ -11,91 +11,33 @@
     <!-- icons links -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <!--Barra principal-->
+
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html" id="logo"><img src="Media/MedGearFW.png" alt="" width="40px" style="margin-bottom: 10px; margin-right: 10px;" id="logo-foto">MedGear Supply</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse ms-5" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
-            </ul>
+            <a class="navbar-brand" href="index.html" id="logo"><img src="Media/MedGearFW.png" alt="" width="40px" style="margin-bottom: 10px; margin-right: 10px;" id="logo-foto">MedGear Supply</a>
+          
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+              <button class="btn" type="submit">Buscar</button>
+                
+              <div class="dropdown">
+              <a id="profile-drop" href="#" class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="media/login.png" alt="" id="login-logo"></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Perfil</a></li>
+                <li><a class="dropdown-item" href="">Carrito</a></li>
+                <li><a class="dropdown-item" href="">Historial de compras</a></li>
+                <li><a class="dropdown-item" href="">Configuración</a></li>
+                <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
+              </ul>
+            </div>
+
+            </form>
+            
           </div>
         </div>
       </nav>
-
-    <!-- contact us -->
-    <div class="container" id="contact">
-        <h2>CONTACTO</h2>
-        <hr>
-        <div class="row">
-          <div class="col-md-4 py-3 py-md-0">
-            <img src="Media/location.png" alt="" width="60px">
-            <p>Medellín, Antioquia. Colombia.
-              <br><strong>Dirección:</strong> ipsum dolor sit amet.
-            </p>
-          </div>
-  
-          <div class="col-md-4 py-3 py-md-0">
-            <img src="Media/phone.png" alt="" width="60px">
-            <p><strong>Fijo: </strong>+0000000000000000
-           <br><strong>WhatsApp: </strong>+0000000000000000
-            </p>
-          </div>
-  
-          <div class="col-md-4 py-3 py-md-0">
-            <img src="Media/email.png" alt="" width="60px">
-            <p>info@medgear.supply.com
-            <br>contact@medgear.supply.com
-            </p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3><strong>Deja tus datos para ponernos en contacto.</strong></h3>
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="form-group">
-              <input type="text" class="form-control" id="usr" placeholder="Nombre y apellidos">
-            </div>
-            <div class="form-group">
-              <input type="phone" class="form-control" id="phn" placeholder="Número de teléfono">
-            </div>
-          </div>
-  
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="form-group">
-              <input type="email" class="form-control" id="eml" placeholder="Correo electrónico">
-            </div>
-            <div class="form-group">
-              <input type="subject" class="form-control" id="sbj" placeholder="Asunto">
-            </div>
-          </div>
-  
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" rows="5" id="comment" placeholder="Deje su mensaje aquí"></textarea>
-  
-        </div>
-        <div id="message"><button>Enviar mensaje</button></div>
-        
-      </div>
-  
-      </div>
-        
 
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">
@@ -150,15 +92,15 @@
         </div>
         <div class="container py-4">
             <div class="copyright">
-                &copy; Copyright <strong><span>MedGear Supply</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>MedGear Supply</span></strong>. All Rights Reserved.
             </div>
             <div class="credits">
                 Designed by <a href="#">Daniel Pérez</a>
             </div>
         </div>
         </footer>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-</body>
-</html>
+      
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  </html>

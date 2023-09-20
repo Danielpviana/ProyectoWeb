@@ -16,7 +16,33 @@
     text-shadow: 1px 1px 1px black;
 }
 
-
+#login-logo{
+  width: 35px;
+  height: auto;
+}
+.d-flex .form-control{
+  margin-top: 4px;
+}
+.d-flex .btn{
+  background-color: #0D626D;
+  margin: 0px 10px 0px 0px;
+  color: #fff;
+}
+.d-flex .btn:hover{
+  background-color: #ECFAFD;
+  color: black;
+}
+#profile-drop{
+  background-color: #129EB1;
+  color: #fff;
+}
+#profile-drop:hover{
+  background-color: #0D626D;
+  color: black;
+}
+.d-flex .dropdown-item:hover{
+  background-color: lightgray;
+}
 
 .nav-link{
     color: white;
@@ -38,6 +64,7 @@
 .icons{
     margin-right: 30px;
     position: right;
+    padding: 10px;
 }
 
 .icons img{
@@ -153,6 +180,9 @@ li .nav-link{
 }
 
 @media screen and (max-width:1100px){
+    .container-fluid .login-logo{
+      right: 1000px;
+    }
     .top-left h3{
         margin-left: 50px;
         font-size: 40px;
@@ -231,57 +261,93 @@ li .nav-link{
     font-size: 14px;
 }
 
-/*login */
-.container--fluid{
-    width: 70%;
-    height: 60%;
-    border: 1px solid gray;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    left: 50%;
+
+/** Log in y log up*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.title{
-    font-size: 24px;
+.form {
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  text-align: center;
 }
 
-.container--fluid form{
-    display: flex;
-    width: 50%;
-    height: 50%;
-    flex-direction: column;
-    justify-content: space-around;
+.form h1 {
+  text-align:center;
+  color: #0D626D;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 30px;
 }
 
-.container--fluid form input{
-    height: 36px;
-    border-radius: 5px;
-    border: 1px solid gray;
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  border-radius:5px;
 }
 
-.container--fluid form p{
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
 }
 
-#Next{
-    background-color: blue;
-    color: white;
-    font-weight: bolder;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
 }
 
-#sign{
-    border: 0px !important;
-    background-color: lightgray;
-    font-weight: bolder;
+.button-link{
+  text-decoration: none;
+}
+.button {
+  background-color: #128290;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  border:0;
+  outline:none;
+  border-radius:5px;
+  padding:15px 0;
+  font-size:2rem;
+  text-transform:uppercase;
+}
+.button:hover{
+  background-color: #129EB1;
 }
 
+.button-block {
+  display:block;
+  width:100%;
+}
 
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.tab-content{
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 40px;
+}
 
 /* about us */
 #about{
@@ -291,6 +357,9 @@ li .nav-link{
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     color: #129EB1
+}
+#about p{
+  text-align: justify;
 }
 /* contact us */
 #contact{

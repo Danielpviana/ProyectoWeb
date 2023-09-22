@@ -1,166 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La tiendita</title>
+    <title>MedGear Supply</title>
+    <link rel="shortcut icon" type="image" href="Media/MedGear.png">
     <link rel="stylesheet" href="styles.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <!--Barra principal-->
-    <!--<section id="header">
-        <a href="index.html"><img src="logo.png" class="logo" alt="logoIMG"></a>
-
-        <div>
-            <ul id="navigationBar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="hero">
-
-    </section>-->
-    
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="navbar-logo img-fluid" src="Media/MedGearFW.png" alt="navbar-logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html" id="logo"><img src="Media/MedGearFW.png" alt="" width="40px" style="margin-bottom: 10px; margin-right: 10px;" id="logo-foto">MedGear Supply</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="shop.html">Todos los productos</a>
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Todas las tiendas</a>
+              <a class="nav-link" href="home.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Acerca de nosotros</a>
+              <a class="nav-link" href="about.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contáctenos</a>
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar sesión</a>
             </li>
           </ul>
-          <span class="navbar-text">
-            <a class="navbar-cart" href="#"><img class="navbar-cart img-fluid" src="carrito.png" alt="navbar-cart">
-              <span class="position-absolute top-1 start-10 translate-middle p-2 bg-secondary rounded-circle">
-              <span class="visually-hidden">New alerts</span>
-            </span></a>
-          </span>
         </div>
       </div>
     </nav>
 
-    <!--Carrusel de imagenes-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://pactandpartners.com/wp-content/uploads/2020/02/Medical-Devices-scaled.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>1st slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://talema.com/wp-content/uploads/blog/medical-device/medical-devices-hospital.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>2nd slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://medcitynews.com/uploads/2021/10/Interventional-Cardiology_JPG-scaled.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>3rd slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+     <!-- Banner section -->
+     <div class="container--fluid" id="bg-image">
+      <img class="banner-photo" src="Media/banner.jpg" alt="banner">
+      <div class="top-left">
+        <h3>Las mejores ofertas</h3>
+        <h2>Categorías <span class="changecontent"></span></h2>
+        <p>Aquí encontrarás todos los equipos médicos que necesesites.
+          <br>Encuentra el mejor postor con el mejor precio.
+        </p>
+        <h5> Hasta 50% de descuento.</h5>
+        <a href="login.html" class="btn">Inicia sesión</a>
+      </div>  
     </div>
 
-    <div class="container text-center">
+    <!-- cards -->
+    <div class="container" style="margin-top: 50px;">
+      <div class="row" id="t-cards">
+          <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                  <img src="Media/desfibrilador.jpg" alt="">
+                  <a href="shop.html"><p>Desfibriladores</p></a>
+              </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                  <img src="Media/monitor sv.png" alt="">
+                  <a href="shop.html"><p>Monitores de signos vitales</p></a>
+              </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="Media/electrobisturi.png" alt="">
+                <a href="shop.html"><p>Electrobisturí</p></a>
+              </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="Media/vestimenta.png" alt="">
+                <a href="shop.html"><p>Vestimentas</p></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us -->
+    <div class="container" id="about">
+      <h2>NOSOTROS</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab fuga id sed voluptas, sunt tempora iure provident hic ad natus? Doloremque fugiat maiores ipsam vero nemo aut! A cum impedit provident magnam corporis iste repudiandae rem laboriosam veritatis incidunt, sequi voluptates facere maxime ipsa, nulla enim assumenda reprehenderit itaque. Est velit natus, tenetur nisi excepturi molestiae veniam iure odio aliquam exercitationem ab dicta a accusamus vero delectus nostrum ex maiores voluptatum facilis? At quis possimus expedita porro atque sed voluptatibus deleniti et repellat eum. Ut natus, architecto tempora sit, qui facilis ipsam quis quasi veritatis aliquid, odit aliquam optio dolorem.</p>
+      <hr>
+    </div>
+    
+
+    <!-- contact us -->
+    <div class="container" id="contact">
+      <h2>CONTACTO</h2>
+      <hr>
       <div class="row">
-        <div class="col-sm-3">
-          Level 1: .col-sm-3
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, delectus ipsum. Ipsa placeat minus alias cumque facere sed sunt nisi ut. Eum voluptatibus, magni repellendus sapiente error illo laborum vero?
+        <div class="col-md-4 py-3 py-md-0">
+          <img src="Media/location.png" alt="" width="60px">
+          <p>Medellín, Antioquia. Colombia.
+            <br><strong>Dirección:</strong> ipsum dolor sit amet.
+          </p>
         </div>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-3 col-sm-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto vel ea nesciunt corporis magni veniam consequatur deserunt delectus ab, nobis unde dolorum aliquam ut labore amet natus quo in?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate omnis amet blanditiis perferendis rem placeat id fugit dicta temporibus, porro, consequatur architecto unde facilis! Odit a quisquam enim dolores accusamus!
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto vel ea nesciunt corporis magni veniam consequatur deserunt delectus ab, nobis unde dolorum aliquam ut labore amet natus quo in?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate omnis amet blanditiis perferendis rem placeat id fugit dicta temporibus, porro, consequatur architecto unde facilis! Odit a quisquam enim dolores accusamus!
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto vel ea nesciunt corporis magni veniam consequatur deserunt delectus ab, nobis unde dolorum aliquam ut labore amet natus quo in?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate omnis amet blanditiis perferendis rem placeat id fugit dicta temporibus, porro, consequatur architecto unde facilis! Odit a quisquam enim dolores accusamus!
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto vel ea nesciunt corporis magni veniam consequatur deserunt delectus ab, nobis unde dolorum aliquam ut labore amet natus quo in?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate omnis amet blanditiis perferendis rem placeat id fugit dicta temporibus, porro, consequatur architecto unde facilis! Odit a quisquam enim dolores accusamus!
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-            <div class="col-3 col-sm-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate, fugiat dolor nihil eligendi incidunt iusto officia saepe veniam corrupti nostrum reprehenderit aliquam similique laboriosam ipsam ducimus exercitationem sed libero?
-            </div>
-          </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <img src="Media/phone.png" alt="" width="60px">
+          <p><strong>Fijo: </strong>+0000000000000000
+         <br><strong>WhatsApp: </strong>+0000000000000000
+          </p>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <img src="Media/email.png" alt="" width="60px">
+          <p>info@medgear.supply.com
+          <br>contact@medgear.supply.com
+          </p>
         </div>
       </div>
+<hr>
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="form-group">
+            <input type="text" class="form-control" id="usr" placeholder="Nombre y apellidos">
+          </div>
+          <div class="form-group">
+            <input type="phone" class="form-control" id="phn" placeholder="Número de teléfono">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="form-group">
+            <input type="email" class="form-control" id="eml" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <input type="subject" class="form-control" id="sbj" placeholder="Asunto">
+          </div>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" id="comment" placeholder="Deje su mensaje aquí"></textarea>
+
+      </div>
+      <div id="message"><button>Enviar mensaje</button></div>
+      
     </div>
 
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" style="margin-top: 50px;">
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    <a href="index.html"><img src="Media/MedGearFW.png" id="footer-logo" width="32px">MedGear</a>
+                    <p>
+                        Medellín <br>
+                        Antioquia <br>
+                        Colombia <br><br>
+                        <strong>Teléfono:</strong> +00000000000000 <br>
+                        <strong>Email:</strong> info@medgear.supply.com <br>
+                    </p>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Accesos rápidos</h4>
+                      <ul>
+                          <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="about.html">Nosotros</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contacto</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de privacidad</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Productos y servicios</h4>
+                      <ul>
+                          <li><i class="bx bx-chevron-right"></i> <a href="shop.html">Dispositivos Médicos</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="shop.html">Proveedores</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="shop.html">Vestimentas</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Redes sociales</h4>
+                      <div class="social-links mt-3">
+                          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                      </div>
+                  </div>
+
+
+              </div>
+             
+
+          </div>
+      </div>
+      <div class="container py-4">
+          <div class="copyright">
+              &copy; Copyright <strong><span>MedGear Supply</span></strong>. All Rights Reserved.
+          </div>
+          <div class="credits">
+              Designed by <a href="#">Daniel Pérez</a>
+          </div>
+      </div>
+      </footer>
+    
+      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

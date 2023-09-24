@@ -13,37 +13,50 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" id="navbar">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
         <a class="navbar-brand" href="index.html" id="logo"><img src="Media/MedGearFW.png" alt="" width="40px" style="margin-bottom: 10px; margin-right: 10px;" id="logo-foto">MedGear Supply</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ms-5" id="navbarNav">
-          <ul class="dropdown-menu">
-            <li class="dropdown-item">
-              <a class="dropdown-link" aria-current="page" href="#">Perfil</a>
-            </li>
-            <li class="dropdown-item">
-              <a class="dropdown-link" href="#">Carrito</a>
-            </li>
-            <li class="dropdown-item">
-              <a class="dropdown-link" href="#">Historial de compras</a>
-            </li>
-            <li class="dropdown-item">
-              <a class="dropdown-link" href="#">Configuración</a>
-            </li>
-            <li class="dropdown-item">
-              <a class="dropdown-link" href="#">Cerrar sesión</a>
-            </li>
+      
+        <form class="d-flex" role="search">
+          <input class="form-control" type="search" placeholder="Buscar como admin" aria-label="Search">
+          <button class="btn btn-search" type="submit">Buscar</button>
+           
+        <div class="dropdown">
+          <a id="profile-drop" href="#" class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="media/login.png" alt="" id="login-logo"></a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="">Perfil</a></li>
+            <li><a class="dropdown-item" href="">Carrito</a></li>
+            <li><a class="dropdown-item" href="">Historial de compras</a></li>
+            <li><a class="dropdown-item" href="">Configuración</a></li>
+            <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
           </ul>
-          </div>
         </div>
-    </nav>
 
-    <div>
-      <h1>texto</h1>
+        </form>
+        
+      </div>
     </div>
+  </nav>
+
+    <div class="switchable-table">
+      <h1>Bienvenido, admin</h1>
+           <ul>
+               <li class="tab-item active" target-wrapper="first-dynamic-table" target-tab="home">Inventario</li>
+               <li class="tab-item" target-wrapper="first-dynamic-table" target-tab="about">Historial de compras</li>
+               <li class="tab-item" target-wrapper="first-dynamic-table" target-tab="faqs">Registro de ventas</li>
+           </ul>
+           <div id="first-dynamic-table">
+               <div class="tab-content active" id="inventario">
+                   <h2>Inventario</h2>
+               </div>
+               <div class="tab-content" id="historial-compras">
+                   <h2>Historial de compras</h2>
+               </div>
+               <div class="tab-content" id="registro-ventas">
+                   <h2>Registro de ventas</h2>
+               </div>
+           </div>
+          </div>
 
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">

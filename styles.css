@@ -86,6 +86,46 @@ li .nav-link{
     font-size: larger;
 }
 
+/* CSS for Cart Tab */
+#cart-tab {
+  position: fixed;
+  top: 50%;
+  right: -250px; /* Initially hidden on the right */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transform: translateY(-50%);
+  z-index: 999;
+  transition: right 0.3s ease;
+}
+
+#cart-toggle-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+#cart-content {
+  display: none;
+  padding: 10px;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Show the cart content when toggled */
+#cart-tab.active {
+  right: 0;
+}
+
+#cart-content.active {
+  display: block;
+}
 
  /*Banner*/
 .banner{
